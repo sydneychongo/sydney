@@ -139,7 +139,7 @@
                                 <h2>SYDNEY CHONGO <span>Web developer | Graphic designer</span></h2>
                                 <p>"Nothing makes research easier than a cup of coffee. If you'd like to help me post more of this information, consider buying me a coffee.</p>
                             <a
-      href="pay.html"><button class="btn btn-warning"> Donation</button>
+      href="pay"><button class="btn btn-warning"> Donation</button>
      
     </a>
 
@@ -246,13 +246,13 @@
                         <div class="sidebar-widget">
                             <h2 class="sidebar-title">Categories</h2>
                             <ol>
-                                <li><a href="./coming soon/coming soon.html">Design</a></li>
-                                <li><a href="./coming soon/coming soon.html">Creative</a></li>
-                                <li><a href="./coming soon/coming soon.html">Idea</a></li>
-                                <li><a href="./coming soon/coming soon.html">Web Design</a></li>
-                                <li><a href="./coming soon/coming soon.html">HTML Template</a></li>
-                                <li><a href="./coming soon/coming soon.html">Wordpress</a></li>
-                                <li><a href="./coming soon/coming soon.html">Other</a></li>
+                                <li><a href="./coming soon/coming soon">Design</a></li>
+                                <li><a href="./coming soon/coming soon">Creative</a></li>
+                                <li><a href="./coming soon/coming soon">Idea</a></li>
+                                <li><a href="./coming soon/coming soon">Web Design</a></li>
+                                <li><a href="./coming soon/coming soon">HTML Template</a></li>
+                                <li><a href="./coming soon/coming soon">Wordpress</a></li>
+                                <li><a href="./coming soon/coming soon">Other</a></li>
                             </ol>
                         </div>
                         <!-- Sidebar Widget -->
@@ -265,7 +265,7 @@
                                 <li>
                                     <span style="background-image: url(assets/images/blog/img-1.jpg)"></span>
                                     <div class="blog-content">
-                                        <a href="single-blog.html">Brandin</a>
+                                        <a href="single-blog">Brandin</a>
                                         <div class="blog-date">01 FEB 2023</div>
                                     </div>
                                 </li>
@@ -274,7 +274,7 @@
                                 <li>
                                     <span style="background-image: url(assets/images/blog/img-2.jpg)"></span>
                                     <div class="blog-content">
-                                        <a href="single-blog.html">Javascript</a>
+                                        <a href="single-blog">Javascript</a>
                                         <div class="blog-date">10 FEB 2023</div>
                                     </div>
                                 </li>
@@ -283,7 +283,7 @@
                                 <li>
                                     <span style="background-image: url(assets/images/blog/img-3.jpg)"></span>
                                     <div class="blog-content">
-                                        <a href="single-blog.html">Power of  CSS.</a>
+                                        <a href="single-blog">Power of  CSS.</a>
                                         <div class="blog-date">1 FEB 2023</div>
                                     </div>
                                 </li>
@@ -292,7 +292,7 @@
                                 <li>
                                     <span style="background-image: url(assets/images/blog/img-4.jpg)"></span>
                                     <div class="blog-content">
-                                        <a href="#">Pre loaders using CSS</a>
+                                        <a href="single-blog">Pre loaders using CSS</a>
                                         <div class="blog-date">1 FEB 2023</div>
                                     </div>
                                 </li>
@@ -305,13 +305,13 @@
                         <div class="sidebar-widget">
                             <h2 class="sidebar-title">POPULAR TAGS</h2>
                             <ol class="tags">
-                                <li><a href="single-blog.html">Design</a></li>
-                                <li><a href="single-blog.html">Creative</a></li>
-                                <li><a href="single-blog.html">Idea</a></li>
-                                <li><a href="single-blog.html">Web Design</a></li>
-                                <li><a href="single-blog.html">HTML Template</a></li>
-                                <li><a href="single-blog.html">Wordpress</a></li>
-                                <li><a href="single-blog.html">Other</a></li>
+                                <li><a href="single-blog">Design</a></li>
+                                <li><a href="single-blog">Creative</a></li>
+                                <li><a href="single-blog">Idea</a></li>
+                                <li><a href="single-blog">Web Design</a></li>
+                                <li><a href="single-blog">HTML Template</a></li>
+                                <li><a href="single-blog">Wordpress</a></li>
+                                <li><a href="single-blog">Other</a></li>
                             </ol>
                         </div>
                         <!-- Sidebar Widget -->
