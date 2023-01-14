@@ -73,20 +73,35 @@
         </nav>
         <!-- ====== // Navbar ====== -->
     </header>
-<body >
+<body style=" background-color: #ffc900;" >
         
-	<div id="paynow" style=" margin: 10% auto auto 40%; "><h3><i class ="fa fa-money ">PAY NOW</h3></div>
-<div style=" background-color: #ffc900;"  id="smart-button-container">
 	
-    <div style="text-align: center"><label for="description">Description : </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
+<div  id="smart-button-container">
+	<div id="paynow" style=" margin: 10% auto auto 40%; "><h3><i class ="fa fa-money ">PAY NOW</h3></div>
+
+    <div style="text-align: center">
+<label for="description">Description :</label>
+<input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
+
       <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
-    <div style="text-align: center"><label for="amount">Enter amount </label><input name="amountInput" type="number" id="amount" value="" ><span> USD</span></div>
-      <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
-    <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
+
+    <div style="text-align: center">
+<label for="amount">Enter amount </label>
+
+<input name="amountInput" type="number" id="amount" value="" ><span> USD</span></div>
+
+      
+<p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
+
+    <div id="invoiceidDiv" style="text-align: center; display: none;">
+<label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
+
       <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+
     <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
   </div>
  </div>
+
     <!-- ====== Footer Area ====== -->
      <footer class="footer_area p_120">
             <div class="container">
