@@ -74,6 +74,23 @@
   <link href="assets/css/style.css" rel="stylesheet">
 <!-- primary css file end -->
 
+
+<!-- form Main CSS File -->
+
+<link rel="alternate" type="application/json+oembed" href="https://www.jotform.com/oembed/?format=json&amp;url=https%3A%2F%2Fform.jotform.com%2F230183493383458" title="oEmbed Form">
+<link rel="alternate" type="text/xml+oembed" href="https://www.jotform.com/oembed/?format=xml&amp;url=https%3A%2F%2Fform.jotform.com%2F230183493383458" title="oEmbed Form">
+<link rel="shortcut icon" href="https://cdn.jotfor.ms/assets/img/favicons/favicon-2021-light%402x.png">
+<link rel="canonical" href="https://form.jotform.com/230183493383458" />
+<link href="https://cdn02.jotfor.ms/static/formCss.css?3.3.38797" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/nova.css?3.3.38797" />
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?themeRevisionID=59fb4852cf3bfe589c6c6f21"/>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_feature.css?3.3.38797" />
+<link type="text/css" rel="stylesheet" href="contact.css"/>
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/buttons/form-submit-button-light_rounded.css?3.3.38797"/>
+
+<!-- form Main CSS File end -->
+
+
 </head>
 
 <body>
@@ -583,7 +600,8 @@
         )
       )
     ">
-      Project Request
+      <button>
+      Project Request </button>
     </a>
           </div>
         </div>
@@ -1031,32 +1049,56 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
+           <form action="https://submit.jotform.com/submit/230183493383458/" method="post" role="form" class="php-email-form ">
+     <div class="row">
+     <ul class="form-section page-section">
+      <li id="cid_7" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-small">
+          <div class="header-text httac htvam">
+            <h3 id="header_7" class="form-header" data-component="header">Send us a message</h3>
+            <div id="subHeader_7" class="form-subHeader">Send me a message and i will get back to your</div>
+          </div>
+        </div>
+      </li>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                  <li class="form-line jf-required" data-type="control_textbox" id="id_4"><label class="form-label form-label-top form-label-auto" id="label_4" for="input_4">Name<span class="form-required">*</span> </label>
+        <div id="cid_4" class="form-input-wide jf-required"> <input type="text" id="input_4" name="q4_name" data-type="input-textbox" class="form-textbox validate[required]" data-defaultvalue="" size="32" value="" placeholder="Full Name" data-component="textbox" aria-labelledby="label_4" required="" /> </div>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <li class="form-line jf-required" data-type="control_email" id="id_5"><label class="form-label form-label-top form-label-auto" id="label_5" for="input_5">E-mail<span class="form-required">*</span> </label>
+        <div id="cid_5" class="form-input-wide jf-required"> <input type="email" id="input_5" name="q5_email5" class="form-textbox validate[required, Email]" data-defaultvalue="" size="32" value="" placeholder="Email Address" data-component="email" aria-labelledby="label_5" required="" /> </div>
+      </li>
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                <li class="form-line jf-required" data-type="control_dropdown" id="id_13"><label class="form-label form-label-top form-label-auto" id="label_13" for="input_13"> Subject<span class="form-required">*</span> </label>
+        <div id="cid_13" class="form-input-wide jf-required"> <select class="form-dropdown validate[required]" id="input_13" name="q13_typeA" style="width:150px" data-component="dropdown" required="">
+            <option value="">None</option>
+            <option value="Web Design">Web Design</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Branding Strategy">Branding Strategy</option>
+            <option value="UX And UI">UX And UI</option>
+            <option value="Prices ">Prices </option>
+            <option value="Payment Method">Payment Method</option>
+            <option value="Others">Others</option>
+          </select> </div>
+      </li>
               </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+              <li class="form-line jf-required" data-type="control_textarea" id="id_10"><label class="form-label form-label-top form-label-auto" id="label_10" for="input_10"> Description<span class="form-required">*</span> </label>
+        <div id="cid_10" class="form-input-wide jf-required"> <textarea id="input_10" class="form-textarea validate[required]" name="q10_typeA" cols="40" rows="6" data-component="textarea" required="" aria-labelledby="label_10"></textarea> </div>
+      </li>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="sent-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div Action="./form/contact.php"class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+              <div class="text-center">
+            <li class="form-line" data-type="control_button" id="id_2">
+            <div id="cid_2" class="form-input-wide">
+          <div data-align="center" class="form-buttons-wrapper form-buttons-center   jsTest-button-wrapperField"><button id="input_2" type="submit" class="form-submit-button form-submit-button-light_rounded submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Send message</button></div>
+        </div>
+      </li>
+    </div>
+    <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
+    <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="230183493383458" />
+
+</form>
           </div>
 
         </div>
@@ -1194,6 +1236,28 @@
       <script src="./js-e/mail-script.js"></script>
       <script src="./js-e/theme.js"></script>
  <!-- secondary  js file end-->
+
+<!-- form Main JS File start -->
+
+<script src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.38797" type="text/javascript"></script>
+<script src="contact_me-.js" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.38797" type="text/javascript"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
+<script src="https://cdn01.jotfor.ms/s/umd/e5860317be2/for-accessibility-enhancer.js" type="text/javascript"></script>
+
+<!-- form Main JS File end -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- project request form js start-->
