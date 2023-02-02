@@ -17,7 +17,7 @@
   text-align: center;
   display: inline-block;
   border: 1px solid #EFEFEF;
-  background: #fff;
+  background: #37517e;
   color: #5B6880;
   z-index: 2;
 }
@@ -41,12 +41,12 @@
   text-align: center;
   display: inline-block;
   border: 1px solid #EFEFEF;
-  background: #fff;
+  background: #37517e;
   color: #5B6880;
   z-index: 2;
 }
 .sbs-testimonial-slider .sbs-arrowright i {
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 .sbs-testimonial-slider .sbs-arrowright a {
   display: block;
