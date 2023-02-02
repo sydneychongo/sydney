@@ -17,8 +17,8 @@
   text-align: center;
   display: inline-block;
   border: 1px solid #EFEFEF;
-  background: #37517e;
-  color: #5B6880;
+  background: #fff;
+  color: #37517e
   z-index: 2;
 }
 .sbs-testimonial-slider .sbs-arrowleft i {
@@ -41,8 +41,8 @@
   text-align: center;
   display: inline-block;
   border: 1px solid #EFEFEF;
-  background: #37517e;
-  color: #5B6880;
+  background: #fff;
+  color: #37517e;
   z-index: 2;
 }
 .sbs-testimonial-slider .sbs-arrowright i {
@@ -72,7 +72,7 @@
   height: 74px;
   width: 74px;
   border-radius: 50%;
-  background: #efefef;
+  background: #37517e;
   margin-right: 33px;
 }
 .choose_slider_items ul li .media {
@@ -89,7 +89,7 @@
 .choose_slider_items ul li .media-body .designation {
   font-size: var(--body-font-size);
   letter-spacing: 0.45px;
-  color: #cacaca;
+  color: #ffff;
   line-height: 25px;
   margin-bottom: 0;
 }
