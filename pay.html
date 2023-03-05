@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Sydney.Jr | Web developer</title>
+   
+<!-- secondary css file start -->
+    <!-- ====== Google Fonts ====== -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+       
+    <!-- ====== ALL CSS start====== -->
+    <link rel="stylesheet" href="assets1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets1/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets1/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets1/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets1/css/animate.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets1/css/responsive.css">
+    <!-- ====== ALL CSS end====== -->
+
+    <!-- ======testimonial start====== -->
+
+ <link rel="stylesheet" href="./css-e/bootstrap.css">
+ <link rel="stylesheet" href="vendors/linericon/style.css">
+ <link rel="stylesheet" href="./css-e/font-awesome.min.css">
+ <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+ <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+ <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+ <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+  <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+ <!-- main css -->
+        <link rel="stylesheet" href="./css-e/style.css">
+ <link rel="stylesheet" href="./css-e/responsive.css">
+
+ <link rel="stylesheet" href="css/styles.css">
+ <link rel="stylesheet" href="css/responsive.css">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"  />
+ <link rel="stylesheet" href="css/slick.css">
+ <!-- animated slider -->
+ <link rel="stylesheet" href="css/animated-slider.css">
+ <!-- ======Testimonial====== -->
+<!-- secondary css file end -->
+
+
+<!-- primary css file start -->
+  <!-- Favicons -->
+  <link href="assets1/images/favicon.ico" rel="icon">
+ <!-- primary css file start -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+ <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+<!-- primary css file end -->
+
+</head>
+
+<body style=" justify-content:center; align-content:center; background-color: #37517e;">
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="portfolio">SydneyJr</a></h1>
+      <!-- image logo -->
+      <!-- <a href="portfolio" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="portfolio">Home</a></li>
+          <li><a class="nav-link scrollto" href="portfolio">About</a></li>
+          <li><a class="getstarted scrollto" href="portfolio">Hire me</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+<div id="paynow" style="margin-top:30%;">
+<h3 style="justify-content:center;">PAY NOW</h3>
+<div id="smart-button-container"  >
+    <div style="text-align: center"><label for="description">Description: </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
+      <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
+    <div style="text-align: center"><label for="amount">Amount: </label><input name="amountInput" type="number" id="amount" value="" ><span>USD</span></div>
+      <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
+    <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
+      <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+    <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
+  </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+  <script>
+  function initPayPalButton() {
+    var description = document.querySelector('#smart-button-container #description');
+    var amount = document.querySelector('#smart-button-container #amount');
+    var descriptionError = document.querySelector('#smart-button-container #descriptionError');
+    var priceError = document.querySelector('#smart-button-container #priceLabelError');
+    var invoiceid = document.querySelector('#smart-button-container #invoiceid');
+    var invoiceidError = document.querySelector('#smart-button-container #invoiceidError');
+    var invoiceidDiv = document.querySelector('#smart-button-container #invoiceidDiv');
+
+    var elArr = [description, amount];
+
+    if (invoiceidDiv.firstChild.innerHTML.length > 1) {
+      invoiceidDiv.style.display = "block";
+    }
+
+    var purchase_units = [];
+    purchase_units[0] = {};
+    purchase_units[0].amount = {};
+
+    function validate(event) {
+      return event.value.length > 0;
+    }
+
+    paypal.Buttons({
+      style: {
+        color: 'gold',
+        shape: 'rect',
+        label: 'paypal',
+        layout: 'vertical',
+        
+      },
+
+      onInit: function (data, actions) {
+        actions.disable();
+
+        if(invoiceidDiv.style.display === "block") {
+          elArr.push(invoiceid);
+        }
+
+        elArr.forEach(function (item) {
+          item.addEventListener('keyup', function (event) {
+            var result = elArr.every(validate);
+            if (result) {
+              actions.enable();
+            } else {
+              actions.disable();
+            }
+          });
+        });
+      },
+
+      onClick: function () {
+        if (description.value.length < 1) {
+          descriptionError.style.visibility = "visible";
+        } else {
+          descriptionError.style.visibility = "hidden";
+        }
+
+        if (amount.value.length < 1) {
+          priceError.style.visibility = "visible";
+        } else {
+          priceError.style.visibility = "hidden";
+        }
+
+        if (invoiceid.value.length < 1 && invoiceidDiv.style.display === "block") {
+          invoiceidError.style.visibility = "visible";
+        } else {
+          invoiceidError.style.visibility = "hidden";
+        }
+
+        purchase_units[0].description = description.value;
+        purchase_units[0].amount.value = amount.value;
+
+        if(invoiceid.value !== '') {
+          purchase_units[0].invoice_id = invoiceid.value;
+        }
+      },
+
+      createOrder: function (data, actions) {
+        return actions.order.create({
+          purchase_units: purchase_units,
+        });
+      },
+
+      onApprove: function (data, actions) {
+        return actions.order.capture().then(function (orderData) {
+
+          // Full available details
+          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+          // Show a success message within this page, e.g.
+          const element = document.getElementById('paypal-button-container');
+          element.innerHTML = '';
+          element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+          // Or go to another URL:  actions.redirect('thank_you.html');
+          
+        });
+      },
+
+      onError: function (err) {
+        console.log(err);
+      }
+    }).render('#paypal-button-container');
+  }
+  initPayPalButton();
+  </script>
+</div>
+
+ <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+
+
+             <h3>Sydney Chongo</h3>
+            <p>
+               Lusaka<br>
+               Lusaka<br>
+               Zambia<br><br>
+             <strong>Phone:</strong><a href="tel:+919035980451">+919035-980-451</a><br>
+             <strong>Email:</strong><a href="mailto:+919035980451">sydneychongojr@gmail.com</a><br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-home"></i> <a href="portfolio">Home</a></li>
+              <li><i class="fa fa-user"></i> <a href="portfolio">About me</a></li>
+              <li><i class="fa fa-wrench"></i> <a href="portfolio">Services</a></li>
+              <li><i class="fa fa-phone"></i> <a href="portfolio">Contact</a></li>
+              <li><i class="fa fa-wrench"></i> <a href="portfolio">Hire me</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="portfolio">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="portfolio">UI AND UX</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="portfolio">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="portfolio">Branding strategy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="portfolio">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Follow me on the following social platforms for updates by clicking the icons below </p>
+            
+              <a href="https://www.facebook.com/profile.php?id=100087162747190" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://instagram.com/sydneyjr?igshid=YmMyMTA2MY=" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/sydney-chipambala" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span><a href="https://www.sydneyjr.tech/">SydneyJr</a></span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+  <!-- end Footer -->
+
+<!-- primary JS Files start -->
+
+ <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+<!-- primary JS Files end -->
+
+
+<!-- Secondary JS Files start -->
+ <!-- testimonial js start --> 
+ <script src="js/jquery-2.2.4.min.js"></script> 
+ <script src="js/bootstrap.min.js"></script> 
+ <script src="js/jquery.magnific-popup.js"></script> 
+ <script src="js/wow.min.js"></script> 
+ <script src="js/jquery.cssslider.min.js"></script> 
+ <script src="js/main.js"></script>
+ <script src="js/owl-carousel.min.js"></script>
+ <script src="js/slick.js"></script>
+ <script src="js/popper.min.js"></script>
+
+ <!-- testimonial js end --> 
+  <!-- ====== ALL JS ====== -->
+   <script src="assets1/js/jquery-3.3.1.min.js"></script>
+    <script src="assets1/js/bootstrap.min.js"></script>
+    <script src="assets1/js/lightbox.min.js"></script>
+    <script src="assets1/js/owl.carousel.min.js"></script>
+    <script src="assets1/js/jquery.mixitup.js"></script>
+    <script src="assets1/js/wow.min.js"></script>
+    <script src="assets1/js/typed.js"></script>
+    <script src="assets1/js/skill.bar.js"></script>
+    <script src="assets1/js/fact.counter.js"></script>
+    <script src="assets1/js/main.js"></script>
+
+     <!-- Experiance -->
+      <script src="./js-e/jquery-3.3.1.min.js"></script>
+      <script src=".js-e/popper.js"></script>
+      <script src="./js-e/bootstrap.min.js"></script>
+      <script src="./js-e/stellar.js"></script>
+      <script src="/vendors/lightbox/simpleLightbox.min.js"></script>
+       <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+      <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+      <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+      <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+      <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+      <script src="./js-e/jquery.ajaxchimp.min.js"></script>
+      <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+      <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+      <script src="./js-e/mail-script.js"></script>
+      <script src="./js-e/theme.js"></script>
+ <!-- =====project request ====== -->
+  
+<!-- Secondary JS Files end -->
